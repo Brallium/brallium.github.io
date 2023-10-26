@@ -10,6 +10,7 @@ mongoose.connect("mongodb+srv://janiekuang8679:brallium123@bralliummerndb.7roy3t
   .then(() => {
     console.log("Connected successfully");
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    process.exit(0);
   })
   .catch((error) => {
     console.error("Connection error:", error);
