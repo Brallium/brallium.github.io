@@ -2,11 +2,11 @@ import React from 'react'
 import './Navbar.css'
 
 const Navbar = () => {
-    retrun (
+    return (
         <div>
-
+            navbar
         </div>
     )
 }
 
-export default Navbar
+export default Navbar;

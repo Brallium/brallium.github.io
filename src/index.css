@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* 
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.App {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center;
+}
+
+.productList {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.productCard {
+  position: relative;
+  margin: 1rem;
+  flex: 1 0 25rem;
+  max-width: 30rem;
+  max-height: 50rem;
+  transition: 0.2s;
+}
