@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 
 const Navbar = () => {
-    retrun (
+    return (
         <div>
 
         </div>
