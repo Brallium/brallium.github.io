@@ -1,12 +1,27 @@
-import React from 'react'
-import './Navbar.css'
+import React from 'react';
+import './Navbar.css';
+import { FaUserCircle, FaShoppingCart } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
-        <div>
-            Navbar
-        </div>
+        <nav className='nav'>
+            <div className='nav-header'>
+                <a href="/" className='brallium-title'>Brallium</a>
+            </div>
+            <div className='nav-content'>
+                <ul className='nav-links'>
+                    <li><a href='/shop'>Shop</a></li>
+                    <li><a href='/about'>About</a></li>
+                    <li><a href='/faq'>FAQ</a></li>
+                    <li><a href='/blogs'>Blogs</a></li>
+                </ul>
+                <div className='nav-icons'>
+                    <a href='/login'><FaUserCircle /></a>
+                    <a href='/cart'><FaShoppingCart /></a>
+                </div>
+            </div>
+        </nav>
     )
 }
 
-export default Navbar
+export default Navbar;

@@ -1,0 +1,52 @@
+.nav {
+    color: black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-header {
+    font-weight: 700;
+    margin-top: .5rem;
+}
+
+.brallium-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    /* Spacing between title and nav links */
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: medium;
+    flex-grow: 1;
+    margin-top: 1rem;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.fa {
+    font-size: 1.5rem;
+}

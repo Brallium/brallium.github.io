@@ -1,21 +1,20 @@
-import React, {useState} from "react"
-import './App.css';
+import React, { useState } from "react"
+import './styles/App.css';
 import Navbar from './Components/NavBar/Navbar';
 import { Products } from './Components/products';
 import contents from './Components/contents';
 import { Login } from "./Login";
-import {Register} from "./Register"
+import { Register } from "./Register"
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
-  const toggleForm = (formName) =>
-  {
+  const toggleForm = (formName) => {
     setCurrentForm(formName);
   }
 
   return (
-  <div>
-    <Navbar />
+    <div>
+      <Navbar />
       <div className='App'>
         {contents.map(contents => (
           <Products
@@ -26,13 +25,13 @@ function App() {
           />
         ))}
       </div>
-    <div className="App">
-      {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-      }
-      
+      <div className="App">
+        {
+          currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+        }
+
+      </div>
     </div>
-  </div>
   );
 }
 
