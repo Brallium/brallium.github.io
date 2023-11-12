@@ -9,6 +9,7 @@ const Navbar = () => {
                 <a href="/" className='brallium-title'>Brallium</a>
             </div>
             <div className='nav-content'>
+                <h1 className='nav-currency'>USD ($)</h1>
                 <ul className='nav-links'>
                     <li><a href='/shop'>Shop</a></li>
                     <li><a href='/about'>About</a></li>
