@@ -3,8 +3,8 @@ import './styles/App.css';
 import Navbar from './Components/NavBar/Navbar';
 import { Products } from './Components/products';
 import contents from './Components/contents';
-import { Login } from "./Components/Login";
-import {Register} from "./Components/Register";
+import { Login } from "./Pages/Login";
+import {Register} from "./Pagess/Register";
 import {Feedback} from "./Components/feedback";
 
 function App() {
