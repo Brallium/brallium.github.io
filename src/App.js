@@ -5,7 +5,7 @@ import { Products } from './Components/products';
 import contents from './Components/contents';
 import { Login } from "./Pages/Login";
 import {Register} from "./Pagess/Register";
-import {feedback} from "./Components/feedback";
+import {feedback} from "./Components/NavBar/feedback";
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
