@@ -15,7 +15,21 @@ function App() {
 
   return (
     <div>
+      <BrowserRouter>
+      <Routes>
       <Navbar />
+        <Route path='/mainpage' element={<MainPage/>}/>
+        <Route path= '/shop' element={<Shop/>}>
+          <Route path= ':productId' element={<Shop/>}/>
+          </Route>
+        <Route path= '/cart' element={<Cart/>}/>
+        <Route path= '/login' element={<LoginSignUp/>}/>
+        <Route path= '/blog' element={<Blog/>}/>
+        <Route path= '/about' element={<About/>}/>
+        
+      </Routes>
+      </BrowserRouter>
+  
       <div className='App'>
         {contents.map(contents => (
           <Products
