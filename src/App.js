@@ -30,13 +30,19 @@ function App() {
       <Routes>
       <Navbar />
         <Route path='/mainpage' element={<MainPage/>}/>
+        <Route path= '/login' element={<Login/>}/>
         <Route path= '/shop' element={<Shop/>}>
           <Route path= ':productId' element={<Shop/>}/>
+        
           </Route>
         <Route path= '/cart' element={<Cart/>}/>
         <Route path= '/login' element={<LoginSignUp/>}/>
         <Route path= '/blog' element={<Blogs/>}/>
         <Route path= '/about' element={<About/>}/>
+        <Route path= '/Profile' element={<Profile/>}/>
+        <Route path= '/register' element={<Register/>}/>
+        <Route path= '/faq' element={<FAQ/>}/>
+        <Rote path= '/cart' element={<Cart/>}/>
         
       </Routes>
       </BrowserRouter>
