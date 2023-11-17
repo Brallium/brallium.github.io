@@ -1,11 +1,16 @@
 import React, { useState } from "react"
 import './styles/App.css';
 import Navbar from './Components/NavBar/Navbar';
-import { Products } from './Components/products';
+import { Shop } from './Pages/Shop';
 import contents from './Components/contents';
 import { Login } from "./Pages/Login";
-import {Register} from "./Pagess/Register";
+import {Register} from "./Pages/Register";
 import {feedback} from "./Components/NavBar/feedback";
+import {About} from "./Pages/About";
+import {FAQ} from "./Pages/FAQ";
+import {Cart} from "./Pages/Cart";
+import {Profile} from "./Pages/Profile";
+import {MainPage} from "./Pages/MainPage";
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
