@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import './styles/App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './Components/NavBar/Navbar';
 import { Shop } from './Pages/Shop';
 import contents from './Components/contents';
@@ -34,7 +35,7 @@ function App() {
           </Route>
         <Route path= '/cart' element={<Cart/>}/>
         <Route path= '/login' element={<LoginSignUp/>}/>
-        <Route path= '/blog' element={<Blog/>}/>
+        <Route path= '/blog' element={<Blogs/>}/>
         <Route path= '/about' element={<About/>}/>
         
       </Routes>
