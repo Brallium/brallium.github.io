@@ -11,6 +11,7 @@ import {FAQ} from "./Pages/FAQ";
 import {Cart} from "./Pages/Cart";
 import {Profile} from "./Pages/Profile";
 import {MainPage} from "./Pages/MainPage";
+import {AuthContextProvider } from './config/AuthContext';
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
@@ -19,6 +20,10 @@ function App() {
   }
 
   return (
+    <AuthContextProvider>
+      <SignInPage/>
+    </AuthContextProvider>
+    
     <div>
       <BrowserRouter>
       <Routes>
