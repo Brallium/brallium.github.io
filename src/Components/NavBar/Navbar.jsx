@@ -8,6 +8,7 @@ const Navbar = () => {
             <div className='nav-header'>
                 <a href="/" className='brallium-title'>Brallium</a>
             </div>
+            <li onClick={()=>{setMenu("shop")}}><Link to='/'>Shop</Link>{menu==="shop"?<hr/>:<></>}</></li>
             <div className='nav-content'>
                 <h1 className='nav-currency'>USD ($)</h1>
                 <ul className='nav-links'>
