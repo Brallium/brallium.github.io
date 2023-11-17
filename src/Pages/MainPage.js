@@ -22,3 +22,4 @@ export default function MainPage() {
         </div>
     )
 }
+export default MainPage
