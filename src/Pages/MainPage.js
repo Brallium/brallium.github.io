@@ -1,20 +1,21 @@
-import { useState } from "react"
+import { useState, useEffect } from "react";
+import axios from 'axios';
 
-export default function MainPage() {
-    const { user } = UserAuth();
-    const [email, setEmail] = useState(undefined);
+export default function Mainpage() {
+    // const { user } = UserAuth();
+    // const [email, setEmail] = useState(undefined);
 
-    useEffect(async () => {
-        const jwt = user.accessToken;
-        const config = {
-            headers: {
-                Authorization: "Bearer " + jwt,
-                "Content-Type": "application/json",
-            },
-        };
-        const response = await Axios.get('http://localhost:3001/getEmail', config);
-        setEmail(response);
-    }, [user]);
+    // useEffect(async () => {
+    //     const jwt = user.accessToken;
+    //     const config = {
+    //         headers: {
+    //             Authorization: "Bearer " + jwt,
+    //             "Content-Type": "application/json",
+    //         },
+    //     };
+    //     const response = await axios.get('http://localhost:3001/getEmail', config);
+    //     setEmail(response);
+    // }, [user]);
 
     return (
         <div>
@@ -22,4 +23,3 @@ export default function MainPage() {
         </div>
     )
 }
-export default MainPage
