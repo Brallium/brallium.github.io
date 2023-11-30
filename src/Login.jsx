@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, {useState} from "react"
 
 export const Login = (props) => {
     const [username, setUsername] = useState('');
@@ -11,13 +11,13 @@ export const Login = (props) => {
 
     return (
         <>
-            {/* <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <label for="Username">Username</label>
                 <input value={username} onChange={(e) => setUsername(e.target.value)}type="username" placeholder="username" id="username" name="username"/>
                 <label for="Password">Password</label>
                 <input value={pass} onChange={(e) => setPass(e.target.value)}type="password" placeholder="********" id="password" name="password"/>
                 <button type="submit">Log In</button>
-            </form> */}
+            </form> 
             <form>
                 <label for="username">Username</label>
                 <input type="username" placeholder="username" id="username" name="username"/>
