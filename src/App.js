@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import './styles/App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './Components/NavBar/Navbar';
 import Shop from './Pages/Shop';
 import contents from './Components/contents';
@@ -15,6 +15,9 @@ import Profile from "./Pages/Profile";
 import MainPage from "./Pages/MainPage";
 import { AuthContextProvider } from './config/AuthContext';
 import { Products } from "./Components/products";
+import Paypal from "./Paypal";
+import ShoppingCart from "./Components/ShoppingCart";
+
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
@@ -29,16 +32,16 @@ function App() {
       </AuthContextProvider> */}
 
       <div>
-        <BrowserRouter>
+        <Router>
           <Navbar />
           <Routes>
-            <Route path='/mainpage' element={<MainPage />} />
+            <Route path='/' element={<MainPage />} />
             <Route path='/login' element={<Login />} />
             <Route path='/shop' element={<Shop />}>
               <Route path=':productId' element={<Shop />} />
 
             </Route>
-            <Route path='/cart' element={<Cart />} />
+            <Route path='/cart' element={<ShoppingCart />} />
             {/* <Route path='/login' element={<LoginSignUp />} /> */}
             <Route path='/blog' element={<Blogs />} />
             <Route path='/about' element={<About />} />
@@ -47,8 +50,8 @@ function App() {
             <Route path='/faq' element={<FAQ />} />
 
           </Routes>
-        </BrowserRouter>
-        <div className='App'>
+        </Router>
+        {/* <div className='App'>
           {contents.map(contents => (
             <Products
               key={contents.id}
@@ -64,6 +67,7 @@ function App() {
           }
 
         </div>
+        <Paypal></Paypal> */}
       </div>
     </>
   );

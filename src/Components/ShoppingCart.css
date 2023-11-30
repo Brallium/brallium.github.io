@@ -1,0 +1,137 @@
+.shopping-cart-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Rubik';
+    align-items: center;
+}
+
+.shopping-heading {
+    display: flex;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #282828;
+    position: absolute; 
+    margin-top: 50px;
+    align-items: center;
+}
+
+.cart-wrap {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 170px;
+    margin-right: 40%;
+}
+
+.cart-item-wrap {
+    align-items: right;
+    margin-bottom: 30px;
+}
+
+.cart-item-image {
+    width: 180px;
+    height: 180px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color:#DCDCDC;
+    position: absolute;
+}
+
+.card-item-container {
+    margin-top:50px;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    width: 500px;
+    height: 215px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #DCDCDC;
+    box-shadow: 2px 3px 28px 1px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+    padding-left: 196px;
+    padding-top:5px;
+}
+.item-name {
+    margin-bottom: 19px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.item-quantity {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color:#5d5d5d;
+}
+
+.item-price {
+    font-size: 1rem;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    color:#303030; 
+    font-weight: bold;
+}
+.order-summary-container{
+    display: flex;
+    align-self: flex-end;
+    height: 310px;
+    width: 410px;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-right: 13%;
+    margin-top: 170px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #afafaf;
+}
+
+.order-summary-money-container{
+    display: flex;
+    height: 280px;
+    width: 129px;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 55px;
+    margin-left: 250px;
+    position: absolute;
+    align-self: flex-end;
+}
+
+.order-summary-text {
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.order-summary-text-small {
+    margin-top: 10px;
+    margin-left: 12px;
+    font-size: 1.0rem;
+}
+
+.order-money-text {
+    align-self: flex-end;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-size: 1.0rem;
+}
+
+.order-money-text-grey {
+    margin-top: 16px;
+    margin-left: 12px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #afafaf;
+}
+
+.paypal {
+    text-align: center;
+}
