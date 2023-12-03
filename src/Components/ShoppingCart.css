@@ -5,6 +5,7 @@
     margin-right: 50px;
     font-family: 'Rubik';
     align-items: center;
+    color: #294855;
 }
 
 .shopping-heading {
@@ -62,19 +63,20 @@
     margin-bottom: 19px;
     font-size: 1.6rem;
     font-weight: bold;
+    color: black;
 }
 
 .item-quantity {
     font-size: 1rem;
     margin-bottom: 10px;
-    color:#5d5d5d;
+    color:#294855;
 }
 
 .item-price {
     font-size: 1rem;
     margin-top: 3px;
     margin-bottom: 10px;
-    color:#303030; 
+    color:#294855; 
     font-weight: bold;
 }
 .order-summary-container{
@@ -88,7 +90,7 @@
     margin-top: 170px;
     border: 1px solid;
     border-radius: 10px;
-    border-color: #afafaf;
+    border-color: #294855;
 }
 
 .order-summary-money-container{
@@ -134,4 +136,75 @@
 
 .paypal {
     text-align: center;
+    margin-right: 5px;
+    margin-left: -5px;
+    left: -5px;
+}
+
+
+.container {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    background-color: grey;
+
+}
+
+.container:before { 
+    content: '';
+    position: absolute;
+    left: 20%;
+    width: 100%; 
+    height: 200%; 
+    background-color: rgb(255, 255, 255); /* fallback */
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.triangle {
+    background-image: linear-gradient(to bottom left, white 35%, #F5F9F2 35%);
+    height: 200vh;
+  }
+
+.image {
+    display: flex;
+    position: absolute;
+    top: 138px;
+    left: 40px;
+    width: 200px;
+    height: 200px;
+}
+
+.image-smaller1 {
+    position: absolute;
+    top: 140px;
+    left: 920px;
+    width: 40px;
+    height: 40px;
+}
+
+.image-smaller2 {
+    position: absolute;
+    top: 172px;
+    left: 965px;
+    width: 30px;
+    height: 30px;
+}
+
+.image-smaller3 {
+    position: absolute;
+    top: 195px;
+    left: 1005px;
+    width: 20px;
+    height: 20px;
+}
+
+.curly-line {
+    position: absolute;
+    top: 755px;
+
 }
