@@ -21,9 +21,24 @@ import ShoppingCart from "./Components/ShoppingCart";
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
+import React, { useState } from "react";
+import "./App.css";
+import Navbar from "./Components/NavBar/Navbar";
+import { Products } from "./Components/products";
+import contents from "./Components/contents";
+import { Login } from "./Login";
+import { Register } from "./Register";
+import axios from "axios";
+import { AuthContextProvider } from "./Config/AuthContext";
+
+axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.withCredentials = true;
+
+function App() {
+  const [currentForm, setCurrentForm] = useState("login");
   const toggleForm = (formName) => {
     setCurrentForm(formName);
-  }
+  };
 
   return (
     <>
@@ -53,6 +68,11 @@ function App() {
         </Router>
         {/* <div className='App'>
           {contents.map(contents => (
+    <AuthContextProvider>
+      <div>
+        <Navbar />
+        <div className="App">
+          {contents.map((contents) => (
             <Products
               key={contents.id}
               image={contents.image}
@@ -70,6 +90,14 @@ function App() {
         <Paypal></Paypal> */}
       </div>
     </>
+          {currentForm === "login" ? (
+            <Login onFormSwitch={toggleForm} />
+          ) : (
+            <Register onFormSwitch={toggleForm} />
+          )}
+        </div>
+      </div>
+    </AuthContextProvider>
   );
 }
 

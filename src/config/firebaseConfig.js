@@ -1,29 +1,25 @@
-// // Import the functions you need from the SDKs you need
+// Import the functions you need from the SDKs you need
 
-// import { initializeApp } from "firebase/app";
-// import { getAuth } from "firebase/auth"
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
-// // TODO: Add SDKs for Firebase products that you want to use
+// TODO: Add SDKs for Firebase products that you want to use
 
-// // https://firebase.google.com/docs/web/setup#available-libraries
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
 
-// // Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_API_KEY,
 
-// const firebaseConfig = {
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
 
-//   apiKey: process.env.REACT_APP_API_KEY,
+  projectId: process.env.REACT_APP_PROJECT_ID,
 
-//   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  appId: process.env.REACT_APP_APP_ID,
+};
 
-//   projectId: process.env.REACT_APP_PROJECT_ID,
+// Initialize Firebase
 
-//   appId: process.env.REACT_APP_APP_ID
-
-// };
-
-
-// // Initialize Firebase
-
-// const app = initializeApp(firebaseConfig);
-// export const auth = getAuth(app);
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
