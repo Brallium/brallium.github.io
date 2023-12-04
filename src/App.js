@@ -69,6 +69,8 @@ function App() {
         </div>
         <Paypal></Paypal> */}
       </div>
+
+
     </>
   );
 }
