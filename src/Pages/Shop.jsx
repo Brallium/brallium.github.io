@@ -9,6 +9,7 @@ const Shop = () => {
     <div className="standard">
       <img src={stand} alt=""/>
     </div>
+   
     
   )
 }
