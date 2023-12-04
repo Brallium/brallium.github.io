@@ -17,56 +17,55 @@ import { AuthContextProvider } from './config/AuthContext';
 import { Products } from "./Components/products";
 import Paypal from "./Paypal";
 import ShoppingCart from "./Components/ShoppingCart";
-
-
-function App() {
-  const [currentForm, setCurrentForm] = useState('login')
-import React, { useState } from "react";
-import "./App.css";
-import Navbar from "./Components/NavBar/Navbar";
-import { Products } from "./Components/products";
-import contents from "./Components/contents";
-import { Login } from "./Login";
-import { Register } from "./Register";
+// import "./App.css";
+// import Navbar from "./Components/NavBar/Navbar";
+// import { Products } from "./Components/products";
+// import contents from "./Components/contents";
+// import { Login } from "./Login";
+// import { Register } from "./Register";
 import axios from "axios";
-import { AuthContextProvider } from "./Config/AuthContext";
+// import { AuthContextProvider } from "./Config/AuthContext";
 
-axios.defaults.baseURL = "http://localhost:3000";
-axios.defaults.withCredentials = true;
 
-function App() {
-  const [currentForm, setCurrentForm] = useState("login");
-  const toggleForm = (formName) => {
-    setCurrentForm(formName);
-  };
+export default function App() {
+  const [currentForm, setCurrentForm] = useState('login')
 
-  return (
-    <>
-      {/* <AuthContextProvider>
+  axios.defaults.baseURL = "http://localhost:3000";
+  axios.defaults.withCredentials = true;
+
+  function App() {
+    const [currentForm, setCurrentForm] = useState("login");
+    const toggleForm = (formName) => {
+      setCurrentForm(formName);
+    };
+
+    return (
+      <>
+        {/* <AuthContextProvider>
         <SignInPage />
       </AuthContextProvider> */}
 
-      <div>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path='/' element={<MainPage />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/shop' element={<Shop />}>
-              <Route path=':productId' element={<Shop />} />
+        <div>
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path='/' element={<MainPage />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/shop' element={<Shop />}>
+                <Route path=':productId' element={<Shop />} />
 
-            </Route>
-            <Route path='/cart' element={<ShoppingCart />} />
-            {/* <Route path='/login' element={<LoginSignUp />} /> */}
-            <Route path='/blog' element={<Blogs />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/Profile' element={<Profile />} />
-            <Route path='/register' element={<Register />} />
-            <Route path='/faq' element={<FAQ />} />
+              </Route>
+              <Route path='/cart' element={<ShoppingCart />} />
+              {/* <Route path='/login' element={<LoginSignUp />} /> */}
+              <Route path='/blog' element={<Blogs />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/Profile' element={<Profile />} />
+              <Route path='/register' element={<Register />} />
+              <Route path='/faq' element={<FAQ />} />
 
-          </Routes>
-        </Router>
-        {/* <div className='App'>
+            </Routes>
+          </Router>
+          {/* <div className='App'>
           {contents.map(contents => (
     <AuthContextProvider>
       <div>
@@ -88,17 +87,15 @@ function App() {
 
         </div>
         <Paypal></Paypal> */}
-      </div>
-    </>
-          {currentForm === "login" ? (
+        </div>
+        {
+          currentForm === "login" ? (
             <Login onFormSwitch={toggleForm} />
           ) : (
             <Register onFormSwitch={toggleForm} />
-          )}
-        </div>
-      </div>
-    </AuthContextProvider>
-  );
+          )
+        }
+      </>
+    );
+  }
 }
-
-export default App;
