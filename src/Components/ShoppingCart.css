@@ -1,7 +1,7 @@
 .shopping-cart-wrap {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-right: 50px;
     font-family: 'Rubik';
     align-items: center;
@@ -35,7 +35,7 @@
     width: 180px;
     height: 180px;
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 15px;
     border-color:#DCDCDC;
     position: absolute;
 }
@@ -56,7 +56,7 @@
     display: flex;
     align-items: right;
     flex-direction: column;
-    padding-left: 196px;
+    padding-left: 205px;
     padding-top:5px;
 }
 .item-name {
@@ -205,6 +205,6 @@
 
 .curly-line {
     position: absolute;
-    top: 755px;
+    top: 955px;
 
 }
