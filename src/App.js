@@ -27,9 +27,9 @@ function App() {
 
   return (
     <>
-      <AuthContextProvider>
+      {/* <AuthContextProvider> */}
         {/* <SignInPage /> */}
-
+        
         <div>
           <Router>
             <Navbar />
@@ -66,7 +66,7 @@ function App() {
         </div>
         <Paypal></Paypal> */}
         </div>
-      </AuthContextProvider>
+      {/* </AuthContextProvider> */}
     </>
   );
 }

@@ -3155,7 +3155,7 @@ axe-core@^4.4.3:
   resolved "https://registry.npmjs.org/axe-core/-/axe-core-4.6.2.tgz"
   integrity sha512-b1WlTV8+XKLj9gZy2DZXgQiyDp9xkkoe2a6U6UbYccScq2wgH/YwCeI2/Jq2mgo0HzQxqJOjWZBLeA/mqsk5Mg==
 
-axios@^1.6.1:
+axios@^1.5.1:
   version "1.6.1"
   resolved "https://registry.npmjs.org/axios/-/axios-1.6.1.tgz"
   integrity sha512-vfBmhDpKafglh0EldBEbVuoe7DyAavGSLWhuSm5ZSEKQnHhBf0xAAwybbNH1IkrJNGnS/VG4I5yxig1pCEXE4g==
@@ -5215,7 +5215,7 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
-firebase@^10.7.0:
+firebase@^10.6.0:
   version "10.7.0"
   resolved "https://registry.npmjs.org/firebase/-/firebase-10.7.0.tgz"
   integrity sha512-t6ZwJQhmq0m7kSssVeu5a1DdmZ0YEBWgNFtpmcvU3PiffWdGVlri6yaX/BK5i4cRtGuQjVPPAEmB90TCpLF5GQ==
