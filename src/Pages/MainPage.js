@@ -28,8 +28,8 @@ export default function Mainpage() {
                         <h1 className="semi-bold"> Welcome to</h1>
                         <img src="/Union.png" alt="logo" className="logo1" />
                         <h1 className="first">WE DON'T JUST COVER. WE PROTECT.</h1>
-                        <h1 className="second">At Brallium, we aim to create sustainable, reusable, and multi-functional nipple covers wearable by anyone and everyone.</h1>
-                        <h1 className="second">Our nipple covers are made out of biodegradable and bacteria resistant material, protecting not just your skin, but the environment.</h1>
+                        <h2 className="second">At Brallium, we aim to create sustainable, reusable, and multi-functional nipple covers wearable by anyone and everyone.</h2>
+                        <h2 className="second">Our nipple covers are made out of biodegradable and bacteria resistant material, protecting not just your skin, but the environment.</h2>
                     </div>
                     <div className="button">
                         <a href="/shop">
