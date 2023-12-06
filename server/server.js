@@ -1,9 +1,16 @@
 const express = require("express");
 const verifyToken = require("./firebaseAdmin");
 const app = express();
+const cors = require("cors");
+const corsConfig = {
+  credentials: true,
+  origin: true,
+};
+app.use(cors(corsConfig));
+app.use(express.json());
 const PORT = process.env.PORT || 3001;
 
-app.use("/", require("./routes/authRoutes"));
+// app.use("/", require("./routes/authRoutes"));
 
 const UserModel = require("./userSchema");
 

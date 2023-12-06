@@ -3,7 +3,7 @@ import axios from "axios";
 import '../styles/index.css'
 import { UserAuth } from "../config/AuthContext";
 
-export const Login = (props) => {
+const Login = (props) => {
     const [username, setUsername] = useState("");
     const [pass, setPass] = useState("");
     const { createUser, signInUser, signOutUser, user } = UserAuth();

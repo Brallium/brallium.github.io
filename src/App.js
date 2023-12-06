@@ -1,9 +1,9 @@
-import React, { useState } from "react"
-import './styles/App.css';
+import React, { useState } from "react";
+import "./styles/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from './Components/NavBar/Navbar';
-import Shop from './Pages/Shop';
-import contents from './Components/contents';
+import Navbar from "./Components/NavBar/Navbar";
+import Shop from "./Pages/Shop";
+import contents from "./Components/contents";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import { feedback } from "./Components/feedback";
@@ -13,47 +13,42 @@ import FAQ from "./Pages/FAQ";
 import Cart from "./Pages/Cart";
 import Profile from "./Pages/Profile";
 import MainPage from "./Pages/MainPage";
-import { AuthContextProvider } from './config/AuthContext';
+import { AuthContextProvider } from "./config/AuthContext";
 import { Products } from "./Components/products";
 import Paypal from "./Paypal";
 import ShoppingCart from "./Components/ShoppingCart";
 import Modal from "./Pages/Modal_login";
 
-
 function App() {
-  const [currentForm, setCurrentForm] = useState('login')
+  const [currentForm, setCurrentForm] = useState("login");
   const toggleForm = (formName) => {
     setCurrentForm(formName);
   }
 
   return (
     <>
-      {/* <AuthContextProvider>
-        <SignInPage />
-      </AuthContextProvider> */}
+      <AuthContextProvider>
+        {/* <SignInPage /> */}
 
-      <div>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path='/' element={<MainPage />} />
-            <Route path='/login' element={<Modal/>} />
-            <Route path='/shop' element={<Shop />}>
-              <Route path=':productId' element={<Shop />} />
-
-            </Route>
-            <Route path='/cart' element={<ShoppingCart />} />
-            {/* <Route path='/login' element={<LoginSignUp />} /> */}
-            <Route path='/blog' element={<Blogs />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/Profile' element={<Profile />} />
-            <Route path='/register' element={<Register />} />
-            <Route path='/faq' element={<FAQ />} />
-
-          </Routes>
-        </Router>
-        </div>
-        {/* <div className='App'>
+        <div>
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/shop" element={<Shop />}>
+                <Route path=":productId" element={<Shop />} />
+              </Route>
+              <Route path="/cart" element={<ShoppingCart />} />
+              {/* <Route path='/login' element={<LoginSignUp />} /> */}
+              <Route path="/blog" element={<Blogs />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/Profile" element={<Profile />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/faq" element={<FAQ />} />
+            </Routes>
+          </Router>
+          {/* <div className='App'>
           {contents.map(contents => (
             <Products
               key={contents.id}
@@ -70,13 +65,8 @@ function App() {
 
         </div>
         <Paypal></Paypal> */}
-         {/* {currentForm === "login" ? (
-            <Login onFormSwitch={toggleForm} />
-          ) : (
-            <Register onFormSwitch={toggleForm} />
-          )}
-        </div> */}
-    {/* </AuthContextProvider> */}
+        </div>
+      </AuthContextProvider>
     </>
   );
 }

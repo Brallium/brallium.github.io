@@ -1,24 +1,28 @@
 .nav {
-    color: black;
-    background-color: gainsboro;
-    padding: 1rem;
+    /* position: fixed; */
+    width: 100%;
+    color: #284855;
+    background-color: #FFFEFC;
+    padding: 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    z-index: 2;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
     /* margin-left: 8%;
     margin-right: 8%; */
+    justify-content: center;
+    z-index: 1;
 }
 
-.nav-header {
-    font-weight: 700;
-    margin-top: .5rem;
-}
 
 .brallium-title {
     font-size: 33px;
     margin-bottom: 1rem;
+    /* margin-top: .5rem; */
+    font-weight: 700;
+    margin-left: 4rem;
     /* Spacing between title and nav links */
 }
 
@@ -27,6 +31,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin: 0;
 }
 
 .nav-links {
@@ -38,28 +43,42 @@
     gap: 2rem;
     font-size: medium;
     flex-grow: 1;
-    margin-top: 1rem;
 }
 
 .nav-icons {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-    margin-right: 8%;
+    align-items: center;
+    gap: 2.1875rem;
+}
+
+.icons {
+    display: flex;
+    gap: 2.1875rem;
+    margin-right: 4rem;
 }
 
 .nav-currency {
-    font-size: medium;
-    margin-top: 1rem;
-    font-weight: 500;
-    margin-left: 8%;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .nav a {
     color: inherit;
     text-decoration: none;
+    margin-top: 0.8rem;
 }
 
 .fa {
     font-size: 1.5rem;
+}
+
+.logo {
+    width: 9.375rem;
+    height: 1.76763rem;
+    flex-shrink: 0;
 }

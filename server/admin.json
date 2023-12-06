@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "brallium",
+  "private_key_id": "094586a0411c8a81ef9776d3ecab11be364e0521",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDxlYB5XdtEG6fO\n64Dl/ZCPDp0YXuB/1EZtmvml0USzpSP6hOb5HhEcgWE7jqmw2s6cEXNppylKZJn0\nL2fsdBRj+1HaC/AaFyZmkzZYJUhA9PzN43yysPm4poBFQKqQy/kMrgDesSGStf3l\n70bVHgf1f7IqEuiIRtrJVP6IpIlkLB5AwY6pcfMJWnzXNgvR4BllYL8jbOWfBZM3\nC4T14hPc9T1curCKCGghTetKOB37L4oNeHtEns4eAc6ZwaJXzXswgK63hdZokwji\nty0RM9XMBQPCIiscqU2GD1I0/8IX7wJ2zsRQq9+JAJGb9RWyqO6quyV64MBNzXSN\ns6C7iUu/AgMBAAECggEAGMOYfdhvJ5YmJ4HgnrLVZLS8yci//pqF9apTOPowrrGY\n9I83FgZM/r0MeIxxPJ3RXBI14HiwNN4HIg7R+l0T0gPrKgzbOfFxkEY65eI8e9wh\nJgHRwId/sbvvnim40kr2ZqRXlnxV0rIxKqbSffosGrBSVRnHGGEbAFRkGyGyq7/f\nBQh3tBeJbS7HG+9WgCCPYMOSBWP+VOEUvNZSa/fl0k6iIUF7qDRgf6mdGx1w1DWx\nxv8aLdEf6ahTe+NC5IzTHRKDKIg5Pfnzu0LDIDvp58o7bAeP+85cL1aLfHpsoqQ7\nXJCWRsSOEORQB+ur17fu7yQfpODjIiZU0YvVyxMfoQKBgQD7b5crDbRgNLy55UCa\nbQNoc1gAHfe6KT9bZUEqgoTIAh3Lr+N5jjlQmz6COXKDvMYt40q28dBDEdsowjmd\nu8x0EQUK8VeUsmRS7L7qeqtTswClrtUSC/w72h69Vafps4bhD3dfP7BxUjEuXOZQ\nHFMUDQTdiPtlzavQBTxaFj7DCQKBgQD1+CFKqlOA0RpIXgMRicj4iQ1xBMVuzJp8\nfZxZS9+0fNp51Y2iYT9TuwYoykD+ZrVYU+j6UtVWIC+Y9Ci4yNP/qHPH74MDqqD3\nJy9FcjdV+0nnZssT6B4X7sA7IWxhYgLX097yKVazvdhsAH+AByOuS5cUdnyPWlmf\nWvEW+k9ihwKBgG3aFki4Jxt1TxNE5xHRGREUe9kpPqd2B/lNZshE1/BuhEgOo6rj\nCYV/HjNVGAQYgNlhma4OPjhfX8oR+YxBlZUMLpDWWrZbrltQliTpzVq3NUwt82d8\nFwqrRIziFIeVaROBZ10U/Wi1SUmBSxqrFV0IRxznETcsQamT8AdH+snJAoGBAPHu\nTmiPYbTJd22IssH0YW07+LGafMs/ihA6yKb4Px/a0lWVnEsEFfK4eRVz4juYMHSh\ni/1zrgyZedebB9bBCexj9wXH6niXwt12eEN5VT5H/WgSrlp1K+xkVEWU2XJrodpB\ntf9Ac9w1NgL89muqGglcpkxlQp0JxC8+lvX/3EdPAoGAfWGh03wYLrNY8n/MwAr7\nGVR9HNOKyd+orWdX2RnfDLHWziBdZEGpltwviXwrNFyFhFdn9v5rwh4paLJMvgF8\nl6gpCSvXZ74KwZQUuqL0Dlc6o4f6wJK1e6KtKqe+z6uJYD6zCm2778NYDoV+7saN\n1+zxPzFbT9UIhOas6Z/dpWg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-g4v9g@brallium.iam.gserviceaccount.com",
+  "client_id": "113150379519923088189",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-g4v9g%40brallium.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
