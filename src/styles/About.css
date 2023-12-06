@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.gstatic.com");
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-family: 'Overpass', sans-serif;
+}
+
+.first-section {
+    width: 90rem;
+    height: 44.75rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.first-section-left {
+    width: 50rem;
+    height: auto;
+    z-index: 0;
+    /* background: url(/image 16.png), lightgray 50% / cover no-repeat; */
+}
+
+.first-section-right {
+    margin-left: 2.44rem;
+    margin-top: 6.06rem;
+    margin-bottom: 9.5rem;
+    display: flex;
+    width: 37.5rem;
+    height: 29.1875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3.125rem;
+}
+
+.story-title {
+    color: var(--Dark-Blue, #284855);
+    font-family: Lato;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0rem;
+    /* margin-top: 6.94rem; */
+}
+
+.story-sub {
+    color: var(--Dark-Blue, #284855);
+    font-family: Overpass;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.signature {
+    margin-bottom: 0.62rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.print-name {
+    margin-top: -3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    color: var(--Dark-Blue, #284855);
+    font-family: Overpass;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.role {
+    color: var(--Dark-Blue, #284855);
+    font-family: Overpass;
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.divider {
+    /* width: 93.75rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    stroke-width: 6px;
+    stroke: var(--Teal, #81B0B2);
+    position: relative; */
+    width: 95.57925rem;
+    height: 13.07681rem;
+    flex-shrink: 0;
+    position: relative;
+}
+
+
+.divider svg {
+    position: absolute;
+    /* Takes the SVGs out of the normal document flow */
+    top: 0%;
+    /* Adjust this value as needed */
+    left: 50%;
+    /* Adjust this value as needed */
+    transform: translate(-50%, -50%);
+    /* Centers the SVGs over the divider */
+    z-index: 1;
+    /* Ensures SVGs are on top of the divider */
+}
+
+.vector11,
+.vector12 {
+    display: inline-block;
+    /* Places SVGs side by side */
+    /* Other styles as needed */
+}
+
+/* Specific positioning for each SVG if needed */
+.vector11 {
+    position: absolute;
+    top: 50%;
+    /* Adjust as needed */
+    left: 30%;
+    /* Adjust as needed */
+    z-index: 1;
+}
+
+.vector12 {
+    position: absolute;
+    top: 0%;
+    /* Adjust as needed */
+    left: 91%;
+    /* Adjust as needed */
+    z-index: 1;
+}
+
+.second-section {
+    width: 90rem;
+    height: 25.125rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-section-inner {
+    display: flex;
+    width: 77rem;
+    /* height: 12.875rem; */
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.statement-title {
+    color: var(--Dark-Blue, #284855);
+    font-family: Lato;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.statement-container-right {
+    flex: 1 0 0;
+    margin-left: 9.875rem;
+}
+
+.substatement-title {
+    color: var(--Dark-Blue, #284855);
+    font-family: Overpass;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.substatement-text {
+    color: var(--Dark-Blue, #284855);
+    font-family: Overpass;
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.third-section {
+    display: flex;
+    /* width: 90rem; */
+    padding-bottom: 92.5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.625rem;
+}
+
+.third-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+.value-title {
+    color: var(--Dark-Blue, #284855);
+    font-family: Lato;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

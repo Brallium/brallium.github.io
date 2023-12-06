@@ -1,7 +1,10 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
+h1 {
+    font-family: 'Lato', sans-serif;
 }
 
 .logo1 {
@@ -57,7 +60,7 @@ body {
 }
 
 .semi-bold {
-    font-family: sans-serif;
+    font-family: Lato;
     font-size: 3.75rem;
     font-style: normal;
     font-weight: 500;
@@ -147,12 +150,16 @@ body {
     z-index: 0;
     margin-top: 9rem;
     width: 100%;
+    flex-shrink: 0;
+    height: auto;
 }
 
 .divider {
     stroke-width: 6px;
     margin-bottom: 2.31rem;
     width: 100%;
+    flex-shrink: 0;
+    height: auto;
 }
 
 .sustainability {
