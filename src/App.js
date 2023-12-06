@@ -17,28 +17,14 @@ import { AuthContextProvider } from './config/AuthContext';
 import { Products } from "./Components/products";
 import Paypal from "./Paypal";
 import ShoppingCart from "./Components/ShoppingCart";
+import Modal from "./Pages/Modal_login";
 
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login')
-import React, { useState } from "react";
-import "./App.css";
-import Navbar from "./Components/NavBar/Navbar";
-import { Products } from "./Components/products";
-import contents from "./Components/contents";
-import { Login } from "./Login";
-import { Register } from "./Register";
-import axios from "axios";
-import { AuthContextProvider } from "./Config/AuthContext";
-
-axios.defaults.baseURL = "http://localhost:3000";
-axios.defaults.withCredentials = true;
-
-function App() {
-  const [currentForm, setCurrentForm] = useState("login");
   const toggleForm = (formName) => {
     setCurrentForm(formName);
-  };
+  }
 
   return (
     <>
@@ -51,7 +37,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<MainPage />} />
-            <Route path='/login' element={<Login />} />
+            <Route path='/login' element={<Modal/>} />
             <Route path='/shop' element={<Shop />}>
               <Route path=':productId' element={<Shop />} />
 
@@ -66,13 +52,9 @@ function App() {
 
           </Routes>
         </Router>
+        </div>
         {/* <div className='App'>
           {contents.map(contents => (
-    <AuthContextProvider>
-      <div>
-        <Navbar />
-        <div className="App">
-          {contents.map((contents) => (
             <Products
               key={contents.id}
               image={contents.image}
@@ -88,16 +70,14 @@ function App() {
 
         </div>
         <Paypal></Paypal> */}
-      </div>
-    </>
-          {currentForm === "login" ? (
+         {/* {currentForm === "login" ? (
             <Login onFormSwitch={toggleForm} />
           ) : (
             <Register onFormSwitch={toggleForm} />
           )}
-        </div>
-      </div>
-    </AuthContextProvider>
+        </div> */}
+    {/* </AuthContextProvider> */}
+    </>
   );
 }
 

@@ -1,0 +1,348 @@
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    }
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    /* display: inline-grid;
+    grid-template-columns: 1fr 1fr; */
+    padding: 40px;
+    /* border-radius: 3px; */
+    width: 900px;
+    height: 400px;
+    /* max-height: 622px;
+    min-width: 300px;  */
+    border-radius: 10px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal_l-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    color: #284855;
+    margin-left: 20px;
+
+}
+
+.Logform {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 50px;
+    margin-left: 622px; */
+    font-family: 'Overpass';
+    font-size: 1rem;
+    /* align-items: center; */
+    color: black;
+    display: inline-block;
+    margin-left: 5px;
+    /* line-height: 32px; */
+    font-family: 'Lato', sans-serif;
+    color: #284855;
+
+}
+
+label{
+    font-family: 'Overpass', sans-serif;
+    font-size: 13px;
+    color: #284855;
+
+}
+
+input[type="username"] , input[type="password"] {
+    display: block;
+    width: 100%;
+    padding:10px;
+    outline: none;
+    border:1px solid #aaa;
+    border-radius:5px;
+    margin-top: 5px;
+    color: #284855;
+}
+
+input[type="fname"] , input[type="lname"], input[type="number"] {
+    display: block;
+    width: 175px;
+    height: 25px;
+    padding:5px;
+    outline: none;
+    border:1px solid #aaa;
+    border-radius:5px;
+    margin-top: 5px;
+    color: #284855;
+}
+
+.forgot {
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+    color: black;
+    text-align: end;
+    margin-top: 3px;
+}
+
+
+.checkbox {
+    border-radius: 50px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 10px;
+    color: #284855;
+    position: absolute;
+}
+
+.accountSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+    z-index: -1;
+} 
+
+h2 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #284855;
+}
+
+h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+    color: #284855;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #284855;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 20px;
+    margin-top: -10px;
+}
+
+img {
+    margin-top: 22px;
+}
+
+.design{
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    position: absolute;
+}
+
+#submit {
+    width: 18%;
+    height: 30px;
+    border:none;
+    outline: none;
+    background-color: #284855;
+    color: white;
+    border-radius: 10px;
+    font-family:  'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 160px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#createAccount {
+    width: 38%;
+    height: 25px;
+    border:none;
+    outline: none;
+    background-color: #284855;
+    color: white;
+    border-radius: 10px;
+    font-family:  'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+/* .createAccount:hover {
+    background-color: 6D8141;
+    transform: scale(1.1);
+
+} */
+
+
+/* .image {
+    width: 400px;
+    height: 400px;
+    top: 35px;
+    display: inline-block;
+    z-index: -1;
+}  */
+
+.modal-content-r{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    /* display: inline-grid;
+    grid-template-columns: 1fr 1fr; */
+    padding: 40px;
+    /* border-radius: 3px; */
+    width: 900px;
+    height: 500px;
+    /* max-height: 622px;
+    min-width: 300px;  */
+    border-radius: 10px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+li{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #284855;
+    text-align: center;
+    line-height: 35px;
+    margin-top: -10px;
+    list-style-position: inside;
+    margin-right: 30px;
+}   
+
+#learn{
+    width: 30%;
+    height: 25px;
+    border:none;
+    outline: none;
+    background-color: #284855;
+    color: white;
+    border-radius: 10px;
+    font-family:  'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.lastName{
+    margin-left: 200px;
+    margin-top: -96px;
+
+}
+
+.firstName{
+    margin-top: -20px;
+    margin-left: 0;
+}
+
+/* .Name{
+    float:left;
+  } */
+
+/* input[type="fname"], input[type="lname"]{
+
+} */
+
+/* label [for="fname"], label [for="lname"] {
+    display: inline-block;
+    margin-bottom: 5px;
+   } */
+
+.user{
+    margin-top: 5px;
+}
+
+.number{
+    margin-top: 5px;
+}
+
+.subscribe{
+    border-radius: 50px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 10px;
+    color: #284855;
+    position: absolute;
+}
+
+.terms{
+    border-radius: 50px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 10px;
+    color: #284855;
+    position: absolute;
+}
+
+.link{
+    margin-left: 280px;
+    color: #284855;
+    font-size: 'Lato', sans-serif ;
+    font-size: 13px;
+    
+}
+
+#createAccounts {
+    width: 38%;
+    height: 25px;
+    border:none;
+    outline: none;
+    background-color: #284855;
+    color: white;
+    border-radius: 10px;
+    font-family:  'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 130px;
+    margin-top: -40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.going p{
+    font-family: 'Overpass', sans-serif;
+    font-size: 13px;
+    color: #284855;
+    text-align: center;
+}
+
+
+
